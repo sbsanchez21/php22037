@@ -1,0 +1,46 @@
+a {
+    color: red;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div a {
+    color: blue;
+}
+
+.presentacion {
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.presentacion .txtInicial {
+    text-align: center;
+    font-weight: bold;
+    margin:.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.presentacion .nosotros {
+    text-align: justify;
+    margin:.5rem;
+    font-size: 1rem;
+}
+
+.presentacion .txtInicial a {
+    background-color: lightgray;
+    color: black;
+}
+
+.cursos {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: .5rem;
+    padding: 1rem;
+}
