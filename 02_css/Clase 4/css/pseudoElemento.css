@@ -1,0 +1,22 @@
+p::first-line {
+    background-color: yellow;
+}
+
+p::first-letter {
+    font-size: 2rem;
+}
+
+h3::after {
+  content: " Dice el autor W. Lauwrence";  
+  font-size: 1rem;
+  font-style: italic;
+}
+
+h4::before {
+    content: "(Libro: Alicia en el país de las maravillas) - ";
+    font-style: italic;
+} 
+
+::selection {
+    background-color: yellow;
+}

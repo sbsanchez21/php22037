@@ -1,3 +1,8 @@
+* {
+    cursor: pointer;
+}
+
+
 a {
     color: red;
 }
@@ -17,6 +22,12 @@ div a {
     border-radius: 10px;
     margin: .5rem;
     padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.presentacion .titulo {
+    font-size: 1.5rem;
+    color: blue;
 }
 
 .presentacion .txtInicial {
@@ -27,7 +38,7 @@ div a {
     padding: 1rem;
 }
 
-.presentacion .nosotros {
+.presentacion .texto {
     text-align: justify;
     margin:.5rem;
     font-size: 1rem;
@@ -43,4 +54,62 @@ div a {
     border-radius: 10px;
     margin: .5rem;
     padding: 1rem;
+}
+
+.cursos .titulo {
+    font-size: 1.5rem;
+    /* color: red; */
+    font-style: italic;
+    margin: 1rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.cursos .texto {
+    text-align: justify;
+    margin:.5rem;
+    font-size: 1rem;
+}
+
+
+.experiencia {
+    background-color: lightcoral;
+    border-radius: 10px;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.experiencia .titulo {
+    font-size: 1rem;
+    /* color: red; */
+    /* font-style: italic; */
+    margin: 1rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.experiencia hr {
+    width: 300px;
+    color: blue;
+    margin-top: 1rem;
+}
+
+.experiencia .texto {
+    text-align: justify;
+    margin:.5rem;
+    font-size: 1rem;
+}
+
+.textotitulo {
+    text-align: justify;
+    margin:.5rem;
+    font-size: 1rem;
+
+}
+
+.textoSbutito {
+    text-align: justify;
+    margin:.5rem;
+    font-size: 1rem;
+
 }
