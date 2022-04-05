@@ -1,0 +1,11 @@
+.foto {
+    width:150px;
+    height:150px;
+    margin: .5rem;
+    /* float: none; */
+    /* float: left; */
+    float: right;
+    /* float: inline-start; */
+    /* float: inline-end; */
+}
+
