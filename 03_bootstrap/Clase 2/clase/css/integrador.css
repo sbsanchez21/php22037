@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card a {
+    padding: .2rem .4rem .2rem .4rem;
+    font-size: .6rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+}
+
+.bgHonolulu {
+    background-image: url("../images/honolulu.jpg");
+    height: 400px;
+    
+}
