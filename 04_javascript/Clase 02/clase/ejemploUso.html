@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <br><br>
+    <!-- eventos -->
+    <span class="titulo"  onmouseover="resaltar();" onmouseleave="opacar();" id="titulo">Bienvenidos</span>
+
+    <br><br><br>
+    <span id="nombre">Juan Perez </span>
+    <span onclick="habilitarInput();" ><i class="fa-solid fa-pen"></i></span>
+    <div>
+        <input type="text" id="inputNombre" onchange="modificarNombre(this.value);" style="display: none;">
+    </div>
+    
+    
+    
+    <script src="js/javascript.js"></script>
+</body>
+</html>
