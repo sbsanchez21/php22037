@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajar con la consola de Javascript</title>
+</head> 
+<body>
+    
+    <script>
+        // declara una variable
+        var a = 1;
+        var b = 4;
+
+        // lenguaje java, fuertemente tipado
+        // Integer c = 3;
+        // Integer d = 3.2; //error
+        // String nombre = "Pepe";
+        // String apellido = 3; //error
+
+        console.log(a);
+        console.log(b);
+        console.log(a+b);
+
+        // puedo redefinir una variable por ser levemente tipado
+        var a = 2;
+        console.log(a);
+
+
+        // variables string o cadenas
+        var nombre = "Pepe";
+        var apellido = "Suarez";
+        var edad = 25;
+        var hijos = 3;
+
+        console.log(nombre);
+        console.log(apellido);
+        console.log(nombre + apellido);
+        console.log(nombre + " " + apellido + ": " + edad + " hijos: " + hijos);
+        console.log(`${nombre} ${apellido}: ${edad} tiene ${hijos} en total`);
+
+
+        // Operadores comparación
+        var a = 3;
+        var b = 4;
+        var c = 3;
+        var ok;
+        
+        // define si son iguales
+        ok = (a == b);
+        console.log(`a es igual a b? ${ok}`);
+
+        console.log(`a es igual a c? ${a == c}`)
+
+        // diferente
+        console.log(`a es diferente a c? ${a != c}`)
+
+        // mayor
+        console.log(`a es mayor a c? ${a > c}`)
+
+    </script>
+</body>
+</html>

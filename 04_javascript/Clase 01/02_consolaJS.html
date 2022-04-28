@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Clase 2</title>
+</head>
+<body>
+    <script>
+        // var declara una variable
+        var a = 5; 
+        var b = 2;
+        var c = 5;
+        var d = 10;
+        var nombre = "Pedro";
+
+        var resultado = a + b;
+        console.log(resultado);
+
+        resultado = a - b;
+        console.log(resultado);
+
+        // Concatenar
+        resultado = nombre + " Suarez";
+        console.log(resultado);
+
+        resultado = `Nombre y Apellido: ${resultado}`;
+        console.log(resultado);
+
+        // Operadores de comparación
+        resultado = (a == b);
+        console.log( `a == b: ${resultado}`);
+        
+        resultado = (a != b);
+        console.log( `a != b: ${resultado}`);
+
+        resultado = (a > b);
+        console.log( `a > b: ${resultado}`);
+
+        resultado = (a < b);
+        console.log( `a < b: ${resultado}`);
+
+        resultado = (a >= b);
+        console.log( `a >= b: ${resultado}`);
+
+        resultado = (a >= d);
+        console.log( `a >= d: ${resultado}`);
+
+        resultado = (a >= c);
+        console.log( `a >= c: ${resultado}`);
+
+        resultado = (a <= c);
+        console.log( `a <= c: ${resultado}`);
+
+        // Operadores lógicos
+        resultado = (a > b) && (b > c);
+        console.log( `(a > b) && (b > c): ${resultado}`);
+
+        resultado = (a > b) && (c > b);
+        console.log( `(a > b) && (c > b): ${resultado}`);
+
+        resultado = (a > b) || (b > c);
+        console.log( `(a > b) ||  (b > c): ${resultado}`);
+
+        resultado = (b > a) || (b > c);
+        console.log( `(b > a) ||  (b > c): ${resultado}`);
+
+        resultado = !((b > a) || (b > c));
+        console.log( `!((b > a) || (b > c)): ${resultado}`);
+        
+        // Condicionales
+        var edadMayor = 18;
+        var edad = 19;
+
+        /**
+        if (edad < edadMayor) {
+            console.log("La persona no puede ingresar al local");
+        }*/
+
+        if (edad < edadMayor) {
+           console.log("La persona no puede ingresar");
+        } else {
+            console.log("La persona puede ingresar");
+        } 
+
+        var nroMes = 1;
+        switch (nroMes) {
+            case 1:
+                console.log("Enero");
+                break;
+            
+            case 2:
+                console.log("Febrero");
+                break;
+              
+            case 3:
+                console.log("Marzo");
+                break;
+
+            default:
+                console.log("No se encontró el mes");
+                break;
+        }
+
+        for (let i = 0; i < 4; i++) {
+            console.log( `Valor de i: ${i}`);
+        }
+        
+
+        let n = 0;
+        while (n < 3) {
+            //n = n + 1;
+            n++;
+            console.log("n: " + n)
+        } 
+
+        let i = 0;
+        do {
+            i += 1;
+            console.log(i);
+        } while (i < 3);
+
+
+
+
+
+    </script>
+
+
+
+    <!-- <script src="script/main.js" ></script> -->
+</body>
+</html>

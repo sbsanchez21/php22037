@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var x = 0; // Variable x declarada como var
+        functionfour5() {
+            for (var i = 0; i < 5; i++) { // un for loop que va desde 0 hasta i menor a 5, osea 4
+                x = i; // asignamos el valor de i a x, como vamos hasta 4, porque cuando i alcanza el valor de 5 el lopop termina, x tiene el valor 4
+            }
+        }
+        four5();
+        console.log(x) //al imprimir x, efectivamente es 4
+        // La x declarada con el valor 0 y la x dentro de la funcion, son la misma x.
+
+        //ES6
+
+        let y = 0;
+        functionfour6() {
+            for (let i = 0; i < 5; i++) {
+                y = i; // Esta y no ha sido declarada si quiera, el alcance de cada variable esta sujeta a los {}, as'i que es undefined
+            }
+        }
+        four6();
+        console.log(y); // Retorna 0, el valor declarado en un principio, la variable y no entró en lafuncion four6(), asi que son y diferentes.        
+    </script>
+
+</body>
+
+</html>
