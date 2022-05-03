@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Clase 2</title>
+</head>
+<body>
+    <script>
+        // repaso
+        var a = 5;
+        var b = 2;
+        var c = 5;
+        var d = 10;
+        var nombre = "Pedro";
+        var apellido = "Suarez"
+        let nro = 123;
+        let hoyHaceFrio = true;
+
+        // operadores aritméticos
+        var resultado = a + b;
+        console.log(resultado);
+
+        resultado = a - b;
+        console.log(resultado);
+
+
+        // Concatenar
+        resultado = nombre + apellido
+        console.log(resultado);
+
+        resultado = "Bienvenido " + nombre + " " + apellido + " a nuestra página"
+        console.log(resultado);
+
+        resultado = `Bienvenido ${nombre} ${apellido} a nuestra página`
+        console.log(resultado);
+
+        resultado = "Nombre y Apellido" + resultado;
+        resultado = `Nombre y Apellido: ${resultado} del usuario`; 
+        console.log(resultado);
+
+        // Operadores de comparación
+        resultado = (a == b);
+        console.log( `a == b: ${resultado}`);
+        
+        resultado = (a != b);
+        console.log( `a != b: ${resultado}`);
+
+        resultado = (a > b);
+        console.log( `a > b: ${resultado}`);
+
+        resultado = (a < b);
+        console.log( `a < b: ${resultado}`);
+
+        resultado = (a >= b);
+        console.log( `a >= b: ${resultado}`);
+
+        resultado = (a >= d);
+        console.log( `a >= d: ${resultado}`);
+
+        resultado = (a >= c);
+        console.log( `a >= c: ${resultado}`);
+
+        resultado = (a <= c);
+        console.log( `a <= c: ${resultado}`);
+
+
+        
+        // Operadores lógicos
+        resultado = (a > b) && (b > c);
+        console.log( `(a > b) && (b > c): ${resultado}`);
+
+        // ejemplo uso &&
+        // var usuDB = "pepe@gmail.com"
+        // var passDB = 1234
+        // var usu = prompt()
+        // var pass=prompt()
+        // if (usu==usuDB && pass==passDB) {
+        //     document.write("Puede ingrear a IG")
+        // } else {
+        //     document.write("NO Puede ingrear a IG")
+        // }
+
+
+        resultado = (a > b) && (c > b);
+        console.log( `(a > b) && (c > b): ${resultado}`);
+
+        resultado = (a > b) || (b > c);
+        console.log( `(a > b) ||  (b > c): ${resultado}`);
+
+        resultado = (b > a) || (b > c);
+        console.log( `(b > a) ||  (b > c): ${resultado}`);
+
+        resultado = !((b > a) || (b > c));
+        console.log( `!((b > a) || (b > c)): ${resultado}`);
+        
+        // Condicionales
+        var edadMayor = 18;
+        // var edad = prompt();
+        var edad = 19
+
+        if (edad < edadMayor) {
+            console.log("La persona no puede ingresar al local");
+        }
+
+        // var edad = prompt("Ingrese su edad");
+        if (edad < edadMayor) {
+           document.write("La persona no puede ingresar");
+        } else {
+            document.write("La persona puede ingresar");
+        } 
+
+ 
+     
+        // switch
+        var nroMes = 18;
+        switch (nroMes) {
+            case 1:
+                console.log("Enero");
+                break; //me saca del bloque
+            
+            case 2:
+                console.log("Febrero");
+                break;
+              
+            case 3:
+                console.log("Marzo");
+                break;
+
+            default:
+                console.log("No se encontró el mes");
+                break;
+        }
+
+        // ejecuta una instrucción una cantidad de veces definida
+        for (let i = 0; i < 4; i++) {
+            console.log( `Valor de i: ${i}`);
+        }
+        
+        // mostrar lista alumnos ejemplo for
+        alumnos=["Pedro Suarez", "Romina Perez", "Juan Ruperez", "Roberto Somosa"]
+        for (let i = 0; i < alumnos.length; i++) {
+            document.write("<table>")
+            document.write("<tr>")    
+            document.write(alumnos[i])
+            document.write("</tr>")    
+            document.write("</table>")
+        }
+
+        let n = 0;
+        while (n < 3) {
+            //n = n + 1;
+            n++;
+            console.log("n: " + n)
+        } 
+
+        let i = 0;
+        do {
+            i += 1;
+            console.log(i);
+        } while (i < 3);
+
+
+        // var, let, const
+        const PI = 3.14;
+        const mayorEdad = 18;
+        if(edad > mayorEdad) {
+            console.log("es mayor edad")
+        }
+
+        if (true) {
+            var x = 10;
+            let y = 20;
+        }
+        console.log(x);
+        // console.log(y); //no se puede consultar x que es let, se destruye cuando sale del if
+        
+        const z = 30;
+        console.log(z);
+        // z = 40;
+
+
+    </script>
+
+
+
+    
+</body>
+</html>
