@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Validar campos con JS</h3>
+
+    <form action="mostrarVariablesSubmit.html" method="get">
+        <label for="email">e-mail</label>
+        <input type="text" name="email" id="email">
+        <button type="button" onclick="validarMail()">Validar</button>
+
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="text" name="pass" id="pass" onkeyup="updFortaleza()">
+        Fortaleza: <span id="fortaleza" style="color: red;">0%</span>
+
+
+        <!-- utilizando patrones -->
+        <br><br>
+        <input type="password" id="pwd" name="pwd"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br><br>
+    <div id="mensajes"></div>
+    
+    <script src="js/validarCampos.js"></script>
+</body>
+</html>
