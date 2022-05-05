@@ -1,0 +1,15 @@
+.accion {
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.noticia {
+    background-color: lightgray;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+}
